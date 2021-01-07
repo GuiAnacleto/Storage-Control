@@ -1,0 +1,44 @@
+<HTMl:5>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elegante - Moda Feminina</title>
+        <link rel="stylesheet" href="../css/relatorio.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+
+    <body onload="slowopen(), startCad(), btnchange('btnRel')" style="margin:0; background-color: #F5DFBB;">
+        <div class="cabeçalho">
+            <header>
+                <h2>Elegante Moda Feminina</h2>
+            </header>
+            <header class="abas">
+                <button id="btnCad" class="aba-button" onclick="gotocadastro()">CADASTRO</button>
+                <button id="btnBxa" class="aba-button" onclick="gotobaixa()">BAIXA</button>
+                <button id="btnIni" class="aba-button" onclick="gotoinicio()">INICIO</button>
+                <button id="btnCons" class="aba-button" onclick="gotoconsulta()">CONSULTA</button>
+                <button id="btnRel" class="aba-button" onclick="gotorelatorio()">RELATORIO</button>
+            </header>
+        </div>
+
+        <body>
+
+            <div id="myDiv" class="animate-bottom">
+                <p>Clique nos Botões Abaixo para gerar os respectivos relatórios!</p>
+                <button type="submit" class="bouton-contact" onclick="gerRelProd()">Relatorio Produtos</button>
+                <button type="submit" class="bouton-contact" onclick="gerRelVend()">Relatório Vendas</button>
+                <div class="space"></div>
+            </div>
+
+        </body>
+
+    </body>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="../js/conector.js"></script>
+
+    </html>
+</HTMl:5>

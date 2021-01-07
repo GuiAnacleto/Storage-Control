@@ -1,0 +1,107 @@
+<HTMl:5>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elegante - Moda Feminina</title>
+        <link rel="stylesheet" href="../css/Cad.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+
+    <body onload="slowopen(), startCad(), btnchange('btnCad')" style="margin:0; background-color: #F5DFBB;">
+        <div class="cabeçalho">
+            <header>
+                <h2>Elegante Moda Feminina</h2>
+            </header>
+            <header class="abas">
+                <button id="btnCad" class="aba-button" onclick="gotocadastro()">CADASTRO</button>
+                <button id="btnBxa" class="aba-button" onclick="gotobaixa()">BAIXA</button>
+                <button id="btnIni" class="aba-button" onclick="gotoinicio()">INICIO</button>
+                <button id="btnCons" class="aba-button" onclick="gotoconsulta()">CONSULTA</button>
+                <button id="btnRel" class="aba-button" onclick="gotorelatorio()">RELATORIO</button>
+            </header>
+        </div>
+
+        <body>
+
+            <div id="myDiv" class="animate-bottom">
+                <form>
+                    <div class="contentform">
+
+                        <div class="leftcontact">
+                            <div class="form-group">
+                                <p>Codigo<span>*</span></p>
+                                <span class="icon-case"></span>
+                                <input type="text" name="Codigo" id="Codigo" data-rule="required" />
+                                <div class="validation"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <p>Nome <span>*</span></p>
+                                <span class="icon-case"><i class="material-icons">file</i></span>
+                                <input type="text" name="Nome" id="Nome" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nome' doit être renseigné." />
+                                <div class="validation"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <p>Custo <span>*</span></p>
+                                <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+                                <input type="number" name="Custo" id="Custo" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Custo' est obligatoire." />
+                                <div class="validation"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <p>Venda <span>*</span></p>
+                                <span class="icon-case"><i class="fa fa-home"></i></span>
+                                <input type="number" name="Venda" id="Venda" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Venda' doit être renseigné." />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+
+                        <div class="rightcontact">
+
+                            <div class="form-group">
+                                <p>Data de Compra <span>*</span></p>
+                                <span class="icon-case"><i class="fa fa-building-o"></i></span>
+                                <input type="date" name="Data" id="Data" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Data' doit être renseigné." />
+                                <div class="validation"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <p>Quantidade <span>*</span></p>
+                                <span class="icon-case"><i class="fa fa-building-o"></i></span>
+                                <input type="number" name="Quantidade" id="Quantidade" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Qauntidade' doit être renseigné." />
+                                <div class="validation"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <p>Fornecedor <span>*</span></p>
+                                <span class="icon-case"><i class="fa fa-building-o"></i></span>
+                                <input type="text" name="Fornecedor" id="Fornecedor" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fornecedor' doit être renseigné." />
+                                <div class="validation"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <p>Nota Fiscal <span>*</span></p>
+                                <span class="icon-case"><i class="fa fa-phone"></i></span>
+                                <input type="text" name="NF" id="NF" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'NNF' doit être renseigné. Minimum 10 chiffres" />
+                                <div class="validation"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <button type="submit" class="bouton-contact" onclick="getCadastro()">Cadastrar</button>
+
+                </form>
+            </div>
+        </body>
+
+    </body>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="../js/conector.js"></script>
+
+    </html>
+</HTMl:5>

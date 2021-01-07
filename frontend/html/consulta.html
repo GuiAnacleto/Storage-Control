@@ -1,0 +1,103 @@
+<HTMl:5>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elegante - Moda Feminina</title>
+        <link rel="stylesheet" href="../css/consulta.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://cdn.jsdelivr.net/npm/vanilla-datatables@latest/dist/vanilla-dataTables.min.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.jsdelivr.net/npm/vanilla-datatables@latest/dist/vanilla-dataTables.min.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="/eel.js"></script>
+    </head>
+
+    <body onload="slowopen(), btnchange('btnCons'), PopulateConsulta()" style="margin:0; background-color: #F5DFBB;">
+        <div class="cabeçalho">
+            <header>
+                <h2>Elegante Moda Feminina</h2>
+            </header>
+            <header class="abas">
+                <button id="btnCad" class="aba-button" onclick="gotocadastro()">CADASTRO</button>
+                <button id="btnBxa" class="aba-button" onclick="gotobaixa()">BAIXA</button>
+                <button id="btnIni" class="aba-button" onclick="gotoinicio()">INICIO</button>
+                <button id="btnCons" class="aba-button" onclick="gotoconsulta()">CONSULTA</button>
+                <button id="btnRel" class="aba-button" onclick="gotorelatorio()">RELATORIO</button>
+            </header>
+        </div>
+
+        <div id="myDiv" class="animate-bottom"></div>
+
+        <div class="contentform">
+
+            <div class="leftcontact">
+                <div class="form-group">
+                    <p>Codigo<span>*</span></p>
+                    <span class="icon-case"></span>
+                    <input type="text" name="Codigo" id="Codigo" data-rule="required" onkeydown="busca()" onkeyup="busca()" />
+                    <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                    <p>Nome Produto<span>*</span></p>
+                    <span class="icon-case"><i class="material-icons">file</i></span>
+                    <input type="text" name="Nome" id="Nome" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nome' doit être renseigné." />
+                    <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                    <p>Preço de Custo <span>*</span></p>
+                    <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+                    <input type="number" name="Custo" id="Custo" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Custo' est obligatoire." />
+                    <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                    <p>Preço de Venda <span>*</span></p>
+                    <span class="icon-case"><i class="fa fa-home"></i></span>
+                    <input type="number" name="Venda" id="Venda" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Venda' doit être renseigné." />
+                    <div class="validation"></div>
+                </div>
+            </div>
+
+            <div class="rightcontact">
+
+                <div class="form-group">
+                    <p>Quantidade Estoque<span>*</span></p>
+                    <span class="icon-case"><i class="fa fa-building-o"></i></span>
+                    <input type="number" name="Quantidade" id="Quantidade" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Qauntidade' doit être renseigné." />
+                    <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                    <p>Fornecedor <span>*</span></p>
+                    <span class="icon-case"><i class="fa fa-building-o"></i></span>
+                    <input type="text" name="Fornecedor" id="Fornecedor" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fornecedor' doit être renseigné." />
+                    <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                    <p>Nota Fiscal <span>*</span></p>
+                    <span class="icon-case"><i class="fa fa-phone"></i></span>
+                    <input type="text" name="NF" id="NF" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'NNF' doit être renseigné. Minimum 10 chiffres" />
+                    <div class="validation"></div>
+                </div>
+
+            </div>
+        </div>
+        <button type="submit" class="bouton-contact" onclick="AlterarTabela()">Alterar</button>
+        <button type="submit" class="bouton-contact-red" onclick="deleteTable()">Deletar</button>
+        </form>
+
+        <div class="space"></div>
+
+
+        <script src="../js/conector.js"></script>
+    </body>
+
+    </html>
+</HTMl:5>

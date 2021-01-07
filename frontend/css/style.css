@@ -1,0 +1,237 @@
+        header {
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: goldenrod;
+        }
+        
+        .cabeçalho {
+            background-color: #1a1a1a;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to bottom, #1a1a1a, #1a1a1a, #1a1a1a, goldenrod);
+        }
+        
+        .abas {
+            padding: 10px;
+        }
+        
+        .aba-button {
+            position: relative;
+            background-color: #1a1a1a;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #FFFFFF;
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .aba-button:after {
+            content: "";
+            background: goldenrod;
+            display: block;
+            position: absolute;
+            padding-top: 300%;
+            padding-left: 350%;
+            margin-left: -20px !important;
+            margin-top: -120%;
+            opacity: 0;
+            transition: all 0.8s
+        }
+        
+        .aba-button:active:after {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition: 0s
+        }
+        
+        #loader {
+            position: absolute;
+            left: 50%;
+            top: 65%;
+            z-index: 1;
+            width: 120px;
+            height: 120px;
+            margin: -76px 0 0 -76px;
+            border: 16px solid goldenrod;
+            border-radius: 50%;
+            border-top: 16px solid #1a1a1a;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 1s linear infinite;
+        }
+        
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        /* Add animation to "page content" */
+        
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+        /*
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
+        
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+        */
+        
+        #myDiv {
+            height: 500px;
+            display: none;
+            text-align: center;
+        }
+        
+        .table-inicio {
+            position: absolute;
+            left: 40%;
+            margin-top: 50px;
+            width: 300px;
+            height: 150px;
+            background-color: #f5f5f5;
+            font-size: 25px;
+        }
+        
+        .IntroduIni {
+            top: 60px;
+            border: 1px solid gray;
+            padding: 8px;
+            text-indent: 50px;
+            text-align: justify;
+            letter-spacing: 3px;
+        }
+        
+        .Paragrafo-Intro {
+            width: 100%;
+        }
+        
+        p {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-indent: 50px;
+            text-align: justify;
+            letter-spacing: 3px;
+            font-size: medium;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .ShowGinfo {
+            position: relative;
+            background-color: #1a1a1a;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #FFFFFF;
+            width: 80%;
+            height: 40px;
+            text-align: center;
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+        
+        .ShowGinfo:after {
+            content: "";
+            background: goldenrod;
+            display: block;
+            position: absolute;
+            padding-top: 300%;
+            padding-left: 350%;
+            margin-left: -20px !important;
+            margin-top: -120%;
+            opacity: 0;
+            transition: all 0.8s
+        }
+        
+        .ShowGinfo:active:after {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition: 0s
+        }
+        
+        #panel,
+        .flip {
+            font-size: 16px;
+            padding: 10px;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            border: solid 1px #a6d8a8;
+            margin: auto;
+        }
+        
+        .columns {
+            width: 33.3%;
+            padding: 8px;
+            float: left;
+            margin-left: 10.3%;
+            margin-right: auto;
+            margin-top: 40px;
+        }
+        
+        .price {
+            list-style-type: none;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid #eee;
+            margin: 0;
+            padding: 0;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+        }
+        
+        .price .header {
+            background-color: goldenrod;
+            color: white;
+            font-size: 25px;
+        }
+        
+        .price .grey {
+            background-color: #eee;
+            height: 25px;
+            font-size: 20px;
+        }
